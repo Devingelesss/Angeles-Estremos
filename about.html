@@ -5,115 +5,228 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Me - Angeles Estremos</title>
   <style>
-    :root {
-      --navy: #1a1f3d;
-      --mustard: hwb(45 11% 12%);
-      --white: hsl(0, 0%, 100%);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--navy);
-      color: var(--white);
-      margin: 0;
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
+      background: url('https://i.ibb.co/xqNK5LQX/sitecover.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      color: #333;
     }
 
-    .container {
-      max-width: 800px;
+    body::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      background-color: var(--white);
-      color: var(--navy);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      height: 100%;
+      z-index: -1;
     }
 
-    h1, h2 {
-      color: var(--navy);
-      border-left: 5px solid var(--mustard);
-      padding-left: 0.5rem;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+      padding-left: 0; /* No left padding for yellow line */
+      border: none;     /* Remove border for header title */
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffc8;
+    }
+
+    #page-content {
+      padding: 140px 20px 40px;
+      max-width: 960px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    body.loaded #page-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .white-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      color: #1a1f3d;
+      position: relative;
+    }
+
+    .white-container h1,
+    .white-container h2 {
+      color: #1a1f3d;
+      border-left: 5px solid #f4c542;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
     }
 
     ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+      padding-left: 20px;
+      margin-top: 10px;
     }
 
     li {
-      margin-bottom: 0.75rem;
+      font-size: 17px;
+      margin-bottom: 10px;
     }
 
     strong {
-      color: var(--mustard);
+      color: #f4c542;
     }
 
     .section {
       margin-top: 2rem;
     }
 
-    .contact {
-      background-color: var(--mustard);
-      color: var(--navy);
-      padding: 1rem;
-      border-radius: 12px;
+    .contact-section {
       margin-top: 2rem;
     }
 
-    .contact p, .contact li {
-      color: var(--navy);
+    .contact-section p {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #1a1f3d;
     }
 
-    a {
-      text-decoration: none;
-      color: var(--navy);
-      font-weight: bold;
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #ccc;
+      margin-top: 40px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .white-container {
+        padding: 20px;
+      }
+
+      .white-container h1 {
+        font-size: 28px;
+      }
+
+      .white-container h2 {
+        font-size: 22px;
+      }
+
+      p, li {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>About Me <span style="color: var(--mustard);"></span></h1>
-    <p>
-      Hi! I’m <strong>Angeles Estremos</strong>, a creative and passionate student taking a 
-      <strong>Bachelor of Industrial Technology major in Computer Technology</strong>. I love combining 
-      technology and design to bring fresh ideas to life.
-    </p>
 
-    <div class="section">
-      <h2>What I Do</h2>
-      <ul>
-        <li><strong>Computer Technology:</strong> Hardware, troubleshooting, maintenance, networking.</li>
-        <li><strong>Web Development:</strong> HTML, CSS, and simple backend tools.</li>
-        <li><strong>Creative Problem Solving:</strong> Calm, focused, and solution-oriented.</li>
-      </ul>
-    </div>
+  <header>
+    <h1>Angeles Estremos</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <div class="section">
-      <h2>My Strengths</h2>
-      <ul>
-        <li>🔧 Hands-on learner</li>
-        <li>🌱 Growth mindset</li>
-        <li>🤝 Team player</li>
-        <li>🎨 Creative thinker</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>My Vision</h2>
+  <div id="page-content">
+    <div class="white-container">
+      <h1>About Me</h1>
       <p>
-        I dream of becoming a <strong>creative tech developer</strong> who brings functionality and 
-        emotion together through thoughtful digital design.
+        Hi! I’m <strong>Angeles Estremos</strong>, a creative and passionate student taking a
+        <strong>Bachelor of Industrial Technology major in Computer Technology</strong>. I love combining
+        technology and design to bring fresh ideas to life.
       </p>
+
+      <div class="section">
+        <h2>What I Do</h2>
+        <ul>
+          <li><strong>Computer Technology:</strong> Hardware, troubleshooting, maintenance, networking.</li>
+          <li><strong>Web Development:</strong> HTML, CSS, and simple backend tools.</li>
+          <li><strong>Creative Problem Solving:</strong> Calm, focused, and solution-oriented.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>My Strengths</h2>
+        <ul>
+          <li>🔧 Hands-on learner</li>
+          <li>🌱 Growth mindset</li>
+          <li>🤝 Team player</li>
+          <li>🎨 Creative thinker</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>My Vision</h2>
+        <p>
+          I dream of becoming a <strong>creative tech developer</strong> who brings functionality and
+          emotion together through thoughtful digital design.
+        </p>
+      </div>
     </div>
-    </div>
+
+    <footer>
+      <p>&copy; 2025 Angeles Estremos. All rights reserved.</p>
+    </footer>
   </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
 </body>
 </html>
