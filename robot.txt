@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://devingelesss.github.io/Angeles-Estremos/sitemap.xml
 
