@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Angeles Estremos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      background: url('https://i.ibb.co/xqNK5LQX/sitecover.png') no-repeat center center fixed;
+      background-size: cover;
+      filter: brightness(1.4);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffc8;
+    }
+
+    #page-content {
+      padding: 140px 20px 40px;
+      max-width: 960px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    body.loaded #page-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .white-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      color: #333;
+      position: relative;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .references ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .references li {
+      margin-bottom: 10px;
+    }
+
+    .profile-img {
+      position: absolute;
+      top: -75px;
+      right: 20px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      border: 4px solid white;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      .profile-img {
+        position: static;
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      .white-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Angeles Estremos</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div id="page-content">
+    <div class="white-container">
+      <img class="profile-img" src="https://i.ibb.co/fG14KmMg/ID-PICTURE.jpg" alt="ID Picture">
+
+      <h1>ANGELES R. ESTREMOS</h1>
+      <p class="contact">
+        Pilit Cabancalan, Mandaue City • 6014<br>
+        09307848322 • angeleslagunareyes@gmail.com
+      </p>
+
+      <div class="section">
+        <h2>Position Applied</h2>
+        <p>Bachelor of Industrial Technology Major in Computer Technology (OJT)</p>
+      </div>
+
+      <div class="section">
+        <h2>Job Objective</h2>
+        <p>To obtain a BIT - CT position as On the Job Trainee that will enable me to enhance my skills.</p>
+      </div>
+
+      <div class="section">
+        <h2>Qualifications</h2>
+        <ul>
+          <li>Maintain a positive attitude; enjoy learning and meeting new people</li>
+          <li>Ability to work well without supervision</li>
+          <li>Ability to meet deadlines in a timely manner</li>
+          <li>Excellent attendance record</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Personal Information</h2>
+        <ul>
+          <li>Birthday: December 28, 2003</li>
+          <li>Birth Place: Tudela, Camotes, Cebu</li>
+          <li>Civil Status: Single</li>
+          <li>Religion: Christian-Catholic</li>
+          <li>Language: English & Filipino</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>Collegiate:</strong> Cebu Technological University, San Francisco Campus<br>
+        Course: Bachelor of Industrial Technology Major in Computer Technology (2022–2026)</p>
+
+        <p><strong>Secondary Education:</strong> Tudela National High School (2016–2022)</p>
+
+        <p><strong>Elementary Education:</strong> Buenavista Elementary School (2010–2016)</p>
+      </div>
+
+      <div class="section">
+        <h2>Related Courses and Skills</h2>
+        <ul>
+          <li>Proficient in MS Word, Excel, PowerPoint</li>
+          <li>Basic knowledge in HTML, CSS, C</li>
+          <li>Technical Drawing and CAD Design</li>
+          <li>Industrial Technology Practices</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Experience</h2>
+        <p><strong>Research Project (2024–2025):</strong></p>
+        <ul>
+          <li>Designed and developed an RFID-based attendance system with payroll management</li>
+          <li>Collaborated with a group to build & test the system</li>
+          <li>Presented & demonstrated the system during a campus exhibit</li>
+          <li>Explained real-life applications of the system</li>
+        </ul>
+      </div>
+
+      <div class="section references">
+        <h2>References</h2>
+        <ul>
+          <li><strong>Mark John P. Lado, MIT</strong><br>CTU-San Francisco IT Instructor<br>Email: markjohnplado@gmail.com</li>
+          <li><strong>Lynjel E. Acebedo</strong><br>NCLA School Teacher<br>Phone: 09977468721</li>
+          <li><strong>Joan Nadet Estremos</strong><br>M Lhuillier Branch Manager<br>Phone: 09167409875</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+
+</body>
+</html>
