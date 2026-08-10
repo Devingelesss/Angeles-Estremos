@@ -1,223 +1,1133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arts & Music - Angeles Estremos</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
 
-    html, body {
-      height: 100%;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      background-color: #f9f9f9;
-      color: #fff;
-      overflow-x: hidden;
-    }
+    <title>Covers — Angeles Estremos</title>
 
-    body::before {
-      content: "";
-      background: url('https://i.ibb.co/xqNK5LQX/sitecover.png') no-repeat center center fixed;
-      background-size: cover;
-      filter: brightness(1.4);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -2;
-    }
+    <meta name="description"
+        content="Music covers by Angeles Estremos including piano, guitar, vocals and flute.">
 
-    body::after {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.4);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
+    <link rel="stylesheet" href="style.css">
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background-color: rgba(0, 0, 0, 0.5);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-      backdrop-filter: blur(5px);
-    }
-
-    header h1 {
-      font-size: 24px;
-      font-weight: 600;
-      color: white;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #00ffc8;
-    }
-
-    #folder-bar {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding-top: 90px; /* push below fixed header */
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-      font-weight: 600;
-      font-size: 16px;
-    }
-
-    #folder-bar a {
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-      transition: color 0.3s ease;
-      padding-bottom: 6px;
-      border-bottom: 3px solid transparent;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      user-select: none;
-    }
-
-    #folder-bar a:hover {
-      color: #00ffc8;
-    }
-
-    #folder-bar a.active {
-      color: #00ffc8;
-      border-bottom: 3px solid #00ffc8;
-    }
-
-    .folder-content {
-      max-width: 960px;
-      margin: auto;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 30px 20px;
-      border-radius: 0 15px 15px 15px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      color: white;
-      min-height: 350px;
-      display: none;
-    }
-
-    .folder-content.active {
-      display: block;
-    }
-
-    .folder-content h2 {
-      color: #f4c542;
-      border-left: 5px solid #f4c542;
-      padding-left: 10px;
-      margin-bottom: 20px;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      border: none;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto 15px auto;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 220px;
-      }
-    }
-  </style>
 </head>
+
+
 <body>
 
-<header>
-  <h1>Angeles Estremos</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-    <a href="artworks.html">Artworks</a>
-    <a href="covers.html">Covers</a>
-  </nav>
-</header>
 
-<div id="folder-bar">
-  <a href="#" class="active" data-target="piano">🎹 Piano Covers</a>
-  <a href="#" data-target="guitar">🎸 Guitar Covers</a>
-  <a href="#" data-target="song">🎤 Song Covers</a>
-  <a href="#" data-target="flute">🎶 Flute Covers</a>
-</div>
+<!-- =========================================
+     NAVIGATION
+========================================= -->
 
-<div id="folder-contents">
+<nav class="nav">
 
-  <section id="piano" class="folder-content active">
-    <h2>🎹 Piano Covers</h2>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1180098882990307%2F&show_text=false&width=560&t=0" allowfullscreen></iframe>
-  </section>
+    <div class="nav-inner">
 
-  <section id="guitar" class="folder-content">
-    <h2>🎸 Guitar Covers</h2>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1779922132542318%2F&show_text=false&width=560&t=0" allowfullscreen></iframe>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=280&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F744526683662618%2F&show_text=false&width=560&t=0" allowfullscreen></iframe>
-  </section>
+        <a class="logo" href="index.html">
+            Angeles<span>.</span>
+        </a>
 
-  <section id="song" class="folder-content">
-    <h2>🎤 Song Covers</h2>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1369922844303365%2F&show_text=false&width=560&t=0" allowfullscreen></iframe>
-    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fangeles.estremos.9%2Fvideos%2F1046899226920151%2F&show_text=false&width=560&t=0" allowfullscreen></iframe>
-  </section>
 
-  <section id="flute" class="folder-content">
-    <h2>🎶 Flute Covers</h2>
-    <iframe src="https://www.youtube.com/embed/D5xSr0U0fJM" allowfullscreen></iframe>
-  </section>
+        <button
+            class="menu"
+            aria-label="Open menu">
 
-</div>
+            ☰
+
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="resume.html">Resume</a>
+
+            <a href="artsworks.html">Artworks</a>
+
+            <a href="covers.html">Covers</a>
+
+            <a href="background.html">Background</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<main>
+
+
+<!-- =========================================
+     PAGE HEADER
+========================================= -->
+
+<section class="page-head container reveal">
+
+    <div class="eyebrow">
+        Music
+    </div>
+
+
+    <h1>
+
+        Sound,
+        <em>your way.</em>
+
+    </h1>
+
+
+    <p class="lead">
+
+        A personal collection of music covers.
+        Explore my piano, guitar, vocal and flute
+        performances.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================================
+     🎵 COVER LINKS
+     
+     ONLY EDIT THIS SECTION WHEN ADDING
+     NEW COVERS.
+     
+     IMPORTANT:
+     Use the EMBED URL of your video.
+========================================= -->
 
 <script>
-  const folderLinks = document.querySelectorAll('#folder-bar a');
-  const contents = document.querySelectorAll('.folder-content');
 
-  folderLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const target = link.getAttribute('data-target');
 
-      folderLinks.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
+/* =========================================
+   🎹 PIANO COVERS
+========================================= */
 
-      contents.forEach(content => {
-        content.classList.remove('active');
-      });
+const pianoCovers = [
 
-      document.getElementById(target).classList.add('active');
-    });
-  });
+    {
+        title: "Mitsuha Theme by Radwimps",
+
+        description:
+            "This is a piano cover using Real Piano app with a Your Name movie clip",
+
+        link:
+            "//www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1180098882990307%2F&show_text=false&width=560&t=0"
+    },
+
+
+    {
+        title: "Piano Cover 02",
+
+        description:
+            "My piano performance",
+
+        link:
+            "PASTE_PIANO_EMBED_LINK_HERE"
+    },
+
+
+    {
+        title: "Piano Cover 03",
+
+        description:
+            "My piano performance",
+
+        link:
+            "PASTE_PIANO_EMBED_LINK_HERE"
+    }
+
+];
+
+
+
+/* =========================================
+   🎸 GUITAR COVERS
+========================================= */
+
+const guitarCovers = [
+
+    {
+        title: "Guitar Cover 01",
+
+        description:
+            "My guitar performance",
+
+        link:
+            "https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1779922132542318%2F&show_text=false&width=560&t=0"
+    },
+
+
+    {
+        title: "Guitar Cover 02",
+
+        description:
+            "My guitar performance",
+
+        link:
+            "https://www.facebook.com/plugins/video.php?height=280&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F744526683662618%2F&show_text=false&width=560&t=0"
+    },
+
+
+    {
+        title: "Guitar Cover 03",
+
+        description:
+            "My guitar performance",
+
+        link:
+            "https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1695244831032874%2F&show_text=false&width=560&t=0"
+    },
+
+    {
+     title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=280&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F662137678647944%2F&show_text=false&width=560&t=0"   
+    },
+
+    {
+     title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F818138539211462%2F&show_text=false&width=560&t=0"
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F813922622934455%2F&show_text=false&width=560&t=0"
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F730635971587844%2F&show_text=false&width=560&t=0"
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1159286378252948%2F&show_text=false&width=560&t=0"   
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1111558162768906%2F&show_text=false&width=560&t=0" 
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F313778680785728%2F&show_text=false&width=560&t=0"
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1692533411099996%2F&show_text=false&width=560&t=0" 
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F1296647944197238%2F&show_text=false&width=560&t=0"
+    },
+
+    {
+        title: "Guitar Cover 04",
+
+        description:
+            "My guitar performance",
+
+        link: "https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fasheru.gray%2Fvideos%2F302800758553774%2F&show_text=false&width=560&t=0"
+    }
+];
+
+
+
+/* =========================================
+   🎤 SONG COVERS
+========================================= */
+
+const songCovers = [
+
+    {
+        title: "Song Cover 01",
+
+        description:
+            "My vocal performance",
+
+        link:
+            "PASTE_SONG_EMBED_LINK_HERE"
+    },
+
+
+    {
+        title: "Song Cover 02",
+
+        description:
+            "My vocal performance",
+
+        link:
+            "PASTE_SONG_EMBED_LINK_HERE"
+    },
+
+
+    {
+        title: "Song Cover 03",
+
+        description:
+            "My vocal performance",
+
+        link:
+            "PASTE_SONG_EMBED_LINK_HERE"
+    }
+
+];
+
+
+
+/* =========================================
+   🪈 FLUTE COVERS
+========================================= */
+
+const fluteCovers = [
+
+    {
+        title: "Flute Cover 01",
+
+        description:
+            "My flute performance",
+
+        link:
+            "PASTE_FLUTE_EMBED_LINK_HERE"
+    },
+
+
+    {
+        title: "Flute Cover 02",
+
+        description:
+            "My flute performance",
+
+        link:
+            "PASTE_FLUTE_EMBED_LINK_HERE"
+    },
+
+
+    {
+        title: "Flute Cover 03",
+
+        description:
+            "My flute performance",
+
+        link:
+            "PASTE_FLUTE_EMBED_LINK_HERE"
+    }
+
+];
+
+
 </script>
 
+
+
+<!-- =========================================
+     📁 FOLDER SELECTION
+     
+     YOUR EXISTING DESIGN
+========================================= -->
+
+<section
+    id="folder-selection"
+    class="section container">
+
+
+    <div class="grid">
+
+
+        <!-- =================================
+             🎹 PIANO
+        ================================== -->
+
+        <div class="card cover-card">
+
+            <div class="cover-visual">
+                🎹
+            </div>
+
+
+            <div class="cover-body">
+
+                <h3>
+                    Piano Covers
+                </h3>
+
+
+                <p>
+
+                    Instrumental arrangements and
+                    piano performances.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Piano
+                    </span>
+
+
+                    <span class="tag">
+
+                        <script>
+                            document.write(
+                                pianoCovers.length
+                            );
+                        </script>
+
+                        Covers
+
+                    </span>
+
+                </div>
+
+
+                <div class="actions">
+
+                    <button
+                        class="btn primary"
+                        onclick="openFolder('piano')">
+
+                        📁 Open Folder
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             🎸 GUITAR
+        ================================== -->
+
+        <div class="card cover-card">
+
+            <div class="cover-visual">
+                🎸
+            </div>
+
+
+            <div class="cover-body">
+
+                <h3>
+                    Guitar Covers
+                </h3>
+
+
+                <p>
+
+                    Acoustic and guitar-based
+                    performances.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Guitar
+                    </span>
+
+
+                    <span class="tag">
+
+                        <script>
+                            document.write(
+                                guitarCovers.length
+                            );
+                        </script>
+
+                        Covers
+
+                    </span>
+
+                </div>
+
+
+                <div class="actions">
+
+                    <button
+                        class="btn primary"
+                        onclick="openFolder('guitar')">
+
+                        📁 Open Folder
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             🎤 SONG
+        ================================== -->
+
+        <div class="card cover-card">
+
+            <div class="cover-visual">
+                🎤
+            </div>
+
+
+            <div class="cover-body">
+
+                <h3>
+                    Song Covers
+                </h3>
+
+
+                <p>
+
+                    Vocal performances and
+                    favorite songs.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Vocals
+                    </span>
+
+
+                    <span class="tag">
+
+                        <script>
+                            document.write(
+                                songCovers.length
+                            );
+                        </script>
+
+                        Covers
+
+                    </span>
+
+                </div>
+
+
+                <div class="actions">
+
+                    <button
+                        class="btn primary"
+                        onclick="openFolder('song')">
+
+                        📁 Open Folder
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             🪈 FLUTE
+        ================================== -->
+
+        <div class="card cover-card">
+
+            <div class="cover-visual">
+                🪈
+            </div>
+
+
+            <div class="cover-body">
+
+                <h3>
+                    Flute Covers
+                </h3>
+
+
+                <p>
+
+                    Melodic flute performances
+                    and arrangements.
+
+                </p>
+
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Flute
+                    </span>
+
+
+                    <span class="tag">
+
+                        <script>
+                            document.write(
+                                fluteCovers.length
+                            );
+                        </script>
+
+                        Covers
+
+                    </span>
+
+                </div>
+
+
+                <div class="actions">
+
+                    <button
+                        class="btn primary"
+                        onclick="openFolder('flute')">
+
+                        📁 Open Folder
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     🎹 PIANO FOLDER
+========================================= -->
+
+<section
+    id="piano"
+    class="section container folder"
+    style="display:none;">
+
+
+    <div class="section-head">
+
+
+        <div>
+
+            <div class="eyebrow">
+                🎹 Piano
+            </div>
+
+            <h2>
+                Piano Covers
+            </h2>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="closeFolders()">
+
+            ← Back to folders
+
+        </button>
+
+
+    </div>
+
+
+    <div
+        id="piano-list"
+        class="grid">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     🎸 GUITAR FOLDER
+========================================= -->
+
+<section
+    id="guitar"
+    class="section container folder"
+    style="display:none;">
+
+
+    <div class="section-head">
+
+
+        <div>
+
+            <div class="eyebrow">
+                🎸 Guitar
+            </div>
+
+            <h2>
+                Guitar Covers
+            </h2>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="closeFolders()">
+
+            ← Back to folders
+
+        </button>
+
+
+    </div>
+
+
+    <div
+        id="guitar-list"
+        class="grid">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     🎤 SONG FOLDER
+========================================= -->
+
+<section
+    id="song"
+    class="section container folder"
+    style="display:none;">
+
+
+    <div class="section-head">
+
+
+        <div>
+
+            <div class="eyebrow">
+                🎤 Vocals
+            </div>
+
+            <h2>
+                Song Covers
+            </h2>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="closeFolders()">
+
+            ← Back to folders
+
+        </button>
+
+
+    </div>
+
+
+    <div
+        id="song-list"
+        class="grid">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================
+     🪈 FLUTE FOLDER
+========================================= -->
+
+<section
+    id="flute"
+    class="section container folder"
+    style="display:none;">
+
+
+    <div class="section-head">
+
+
+        <div>
+
+            <div class="eyebrow">
+                🪈 Flute
+            </div>
+
+            <h2>
+                Flute Covers
+            </h2>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="closeFolders()">
+
+            ← Back to folders
+
+        </button>
+
+
+    </div>
+
+
+    <div
+        id="flute-list"
+        class="grid">
+
+    </div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="container">
+
+        © <span class="year"></span>
+        Angeles Estremos.
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+
+<!-- =========================================
+     COVER SYSTEM
+========================================= -->
+
+<script>
+
+
+/* =========================================
+   CREATE VIDEO CARDS
+========================================= */
+
+function createCoverCards(
+    covers,
+    emoji,
+    containerId
+) {
+
+    const container =
+        document.getElementById(containerId);
+
+
+    container.innerHTML = "";
+
+
+    covers.forEach(function(cover) {
+
+
+        const card =
+            document.createElement("div");
+
+
+        card.className =
+            "card cover-card";
+
+
+        card.innerHTML = `
+
+            <div class="cover-visual">
+
+                ${emoji}
+
+            </div>
+
+
+            <div class="cover-body">
+
+                <h3>
+
+                    ${cover.title}
+
+                </h3>
+
+
+                <p>
+
+                    ${cover.description}
+
+                </p>
+
+
+                <div class="cover-video">
+
+                    <iframe
+
+                        src="${cover.link}"
+
+                        title="${cover.title}"
+
+                        allow="
+                            autoplay;
+                            encrypted-media;
+                            fullscreen;
+                            picture-in-picture
+                        "
+
+                        allowfullscreen>
+
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        container.appendChild(card);
+
+    });
+
+}
+
+
+
+/* =========================================
+   LOAD FOLDERS
+========================================= */
+
+createCoverCards(
+    pianoCovers,
+    "🎹",
+    "piano-list"
+);
+
+
+createCoverCards(
+    guitarCovers,
+    "🎸",
+    "guitar-list"
+);
+
+
+createCoverCards(
+    songCovers,
+    "🎤",
+    "song-list"
+);
+
+
+createCoverCards(
+    fluteCovers,
+    "🪈",
+    "flute-list"
+);
+
+
+
+/* =========================================
+   OPEN FOLDER
+========================================= */
+
+function openFolder(folderName) {
+
+
+    document
+        .getElementById("folder-selection")
+        .style.display = "none";
+
+
+    document
+        .querySelectorAll(".folder")
+        .forEach(function(folder) {
+
+            folder.style.display = "none";
+
+        });
+
+
+    const folder =
+        document.getElementById(folderName);
+
+
+    folder.style.display = "block";
+
+
+    folder.scrollIntoView({
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+
+/* =========================================
+   CLOSE FOLDER
+========================================= */
+
+function closeFolders() {
+
+
+    document
+        .querySelectorAll(".folder")
+        .forEach(function(folder) {
+
+            folder.style.display = "none";
+
+        });
+
+
+    document
+        .getElementById("folder-selection")
+        .style.display = "block";
+
+
+    document
+        .getElementById("folder-selection")
+        .scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+}
+
+
+</script>
+
+
+
+<!-- =========================================
+     VIDEO STYLING
+     
+     DOES NOT CHANGE YOUR MAIN DESIGN
+========================================= -->
+
+<style>
+
+
+.cover-video {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+}
+
+
+.cover-video iframe {
+
+    width: 100%;
+
+    height: 315px;
+
+    border: none;
+
+    display: block;
+
+    border-radius: 12px;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .cover-video iframe {
+
+        height: 220px;
+
+    }
+
+}
+
+
+</style>
+
+
 </body>
+
 </html>
