@@ -1,204 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Angeles Estremos</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    html, body {
-      height: 100%;
-    }
+    <title>Home — Angeles Estremos</title>
 
-    body {
-      background-color: #f9f9f9;
-      color: #fff;
-      overflow-x: hidden;
-    }
+    <meta name="description"
+        content="Angeles Estremos — Computer Technology, web development, design and music portfolio.">
 
-    body::before {
-      content: "";
-      background: url('https://i.ibb.co/xqNK5LQX/sitecover.png') no-repeat center center fixed;
-      background-size: cover;
-      filter: brightness(1.4);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -2;
-    }
-
-    body::after {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.4);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background-color: rgba(0, 0, 0, 0.5);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-      backdrop-filter: blur(5px);
-    }
-
-    header h1 {
-      font-size: 24px;
-      font-weight: 600;
-      color: white;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #00ffc8;
-    }
-
-    #page-content {
-      padding: 140px 20px 40px;
-      max-width: 1000px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    body.loaded #page-content {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .intro-section {
-      max-width: 500px;
-      text-align: left;
-      animation: fancyEntrance 1s ease-out 0.4s both;
-      padding: 20px;
-      padding-left: 1in; /* Added padding to shift content 1 inch to the right */
-    }
-
-    .intro-section h2 {
-      font-size: 72px; /* Increased font size */
-      margin-bottom: 20px;
-      color: #fff;
-    }
-
-    .intro-section p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #f0f0f0;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 13px;
-      color: #ccc;
-      margin-top: 40px;
-      width: 100%;
-    }
-
-    @keyframes fancyEntrance {
-      0% {
-        opacity: 0;
-        transform: translateX(50px) scale(0.95);
-      }
-      60% {
-        opacity: 1;
-        transform: translateX(-10px) scale(1.02);
-      }
-      100% {
-        transform: translateX(0) scale(1);
-      }
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px 25px;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-
-      #page-content {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro-section {
-        text-align: center;
-        max-width: 100%;
-        padding-left: 0; /* Remove left padding on mobile for better layout */
-      }
-
-      .intro-section h2 {
-        font-size: 40px; /* Scaled for mobile */
-      }
-
-      .intro-section p {
-        font-size: 16px;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Angeles Estremos</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <a href="artworks.html">Artworks</a>
-      <a href="covers.html">Covers</a>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <nav class="nav">
+        <div class="nav-inner">
+
+            <a class="logo" href="index.html">
+                Angeles<span>.</span>
+            </a>
+
+            <button class="menu" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="artsworks.html">Artworks</a>
+                <a href="covers.html">Covers</a>
+                <a href="background.html">Background</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
     </nav>
-  </header>
 
-  <div id="page-content">
-    <div class="intro-section">
-      <h2>Welcome!</h2>
-      <p>Hello! I’m Angeles, a dedicated Computer Technology student with a strong passion for innovation, design, and creative problem-solving. My journey is driven by a deep curiosity for technology and a desire to build meaningful solutions. In addition to my technical interests, I also have a love for music and enjoy playing instruments. This site highlights my background, skills, and projects — feel free to explore and learn more about my work and passions.
 
-    </div>
-  </div>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <main>
 
-  <footer>
-    <p>&copy; 2025 Angeles Estremos. All rights reserved.</p>
-  </footer>
+        <section class="hero container reveal">
 
-  <script>
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-  </script>
+            <div>
+
+                <div class="eyebrow">
+                    Computer Technology · Creative Portfolio
+                </div>
+
+                <h1>
+                    Hello, I'm
+                    <em>Angeles.</em>
+                </h1>
+
+                <p class="lead">
+                    A Computer Technology student who enjoys building
+                    useful digital experiences, exploring web development,
+                    and expressing creativity through art and music.
+                </p>
+
+                <div class="actions">
+
+                    <a class="btn primary" href="about.html">
+                        Explore my story →
+                    </a>
+
+                    <a class="btn" href="resume.html">
+                        View resume
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE CARD -->
+            <div class="hero-card">
+
+                <div class="avatar">
+            <img src="https://i.ibb.co/z3Mztbp/CTU-SAN-FRAN-REO-IGOP-05-03-26-2006-O-03.jpg" alt="CTU-SAN-FRAN-REO-IGOP-05-03-26-2006-O-03" alt="Angeles Estremos">
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHAT I DO
+        ========================== -->
+        <section class="section container">
+
+            <div class="section-head">
+
+                <div>
+
+                    <div class="eyebrow">
+                        What I do
+                    </div>
+
+                    <h2>
+                        Technology with a creative side.
+                    </h2>
+
+                </div>
+
+                <p>
+                    I combine technical skills with visual design,
+                    problem-solving, and creative interests.
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+                <!-- WEB DEVELOPMENT -->
+                <div class="card">
+
+                    <div class="icon">
+                        ⌘
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p class="lead">
+                        HTML, CSS and JavaScript with a focus on
+                        responsive, accessible and clean interfaces.
+                    </p>
+
+                </div>
+
+
+                <!-- UI DESIGN -->
+                <div class="card">
+
+                    <div class="icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        UI & Design
+                    </h3>
+
+                    <p class="lead">
+                        Simple layouts, visual hierarchy and polished
+                        details that make websites easier to use.
+                    </p>
+
+                </div>
+
+
+                <!-- MUSIC & ARTS -->
+                <div class="card">
+
+                    <div class="icon">
+                        ♫
+                    </div>
+
+                    <h3>
+                        Music & Arts
+                    </h3>
+
+                    <p class="lead">
+                        Piano, guitar, song and flute covers alongside
+                        a personal collection of creative work.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <div class="container">
+
+            © <span class="year"></span>
+            Angeles Estremos.
+
+            Designed with a modern,
+            minimal aesthetic.
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>
+
+### Important
+
+For this `index.html` to work correctly, keep these files in the **same folder**:
+
+```text
+Angeles-Estremos/
+│
+├── index.html
+├── about.html
+├── resume.html
+├── artsworks.html
+├── covers.html
+├── background.html
+├── contact.html
+├── style.css
+└── script.js
